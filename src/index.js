@@ -15,6 +15,7 @@ $(document).ready(function() {
         $('.card-new-currency').show();
         $('#new-currency').text("New Amount: " + (parseFloat((dollarsUs * body.conversion_rates[currencyC])).toFixed(2)) + " " + currencyC);
         $('#currency-name').text("Your new currency is: " + currencyC);
+        $('#conversion-process').text("$" + dollarsUs + " USD" + " = " + (parseFloat((dollarsUs * body.conversion_rates[currencyC])).toFixed(2)) + " " + currencyC);
         $('#show-errors').text("");
       }, function(error) {
         if (error.includes("unsupported-code")) {
