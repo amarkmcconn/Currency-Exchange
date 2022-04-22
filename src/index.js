@@ -7,15 +7,16 @@ import CurrencyService from './js/currency-api';
 $(document).ready(function() {
   $('#conversion').submit(function (e) {
     e.preventDefault();
-    let amountUsd = $('#amount').val();
-    let chosenCurrency = $('#conversion').val();
+    let dollars = $('#amount').val();
+    let currencyC = $('#select-currency').val();
     let promise = CurrencyService.getExchange();
       promise.then(function(response) {
-      const body = JSON.parse(response);
-      console.log(body);
-        if (chosenCurrency = "AED") {
-          $('#new-currency').text((`${body.conversion_rates.AED}`) * amountUsd)
-        }
-      })
-  })
-})
+        const body = JSON.parse(response);
+        $('#new-currency').text(Math.round(dollars * body.conversion_rates[currencyC]));
+      }, function(error) {
+        $("show-errors").text(`There was an error processing your request: ${error}. Please Try again`);
+      });
+  });
+});
+
+
