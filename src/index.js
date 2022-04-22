@@ -17,7 +17,7 @@ $(document).ready(function() {
         $('#show-errors').text("");
       }, function(error) {
         if (error.includes("unsupported-code")) {
-          $("#show-errors").text(`We currently do not support that currency. Please try a different currency`);
+          $("#show-errors").text(`We currently do not support that currency. Please try a different currency.`);
         } else if (error.includes("malformed-request")) {
           $("#show-errors").text(`when some part of your request doesn't follow the structure shown above.`);
         } else if (error.includes("invalid-key")) {
