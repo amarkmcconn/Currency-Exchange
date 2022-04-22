@@ -7,16 +7,29 @@ import CurrencyService from './js/currency-api';
 $(document).ready(function() {
   $('#conversion').submit(function (e) {
     e.preventDefault();
-    let dollars = $('#amount').val();
+    let dollarsUs = $('#amount').val();
     let currencyC = $('#select-currency').val();
     let promise = CurrencyService.getExchange();
       promise.then(function(response) {
         const body = JSON.parse(response);
-        $('#new-currency').text(Math.round(dollars * body.conversion_rates[currencyC]));
+        $('#new-currency').text((parseFloat((dollarsUs * body.conversion_rates[currencyC])).toFixed(2)));
+        $('#currency-name').text(currencyC);
+        $('#show-errors').text("");
       }, function(error) {
-        $("show-errors").text(`There was an error processing your request: ${error}. Please Try again`);
+        if (error.includes("unsupported-code")) {
+          $("#show-errors").text(`We currently do not support that currency. Please try a different currency`);
+        } else if (error.includes("malformed-request")) {
+          $("#show-errors").text(`when some part of your request doesn't follow the structure shown above.`);
+        } else if (error.includes("invalid-key")) {
+          $("#show-errors").text(`API key is not valid.`);
+        } else if (error.includes("inactive-account")) {
+          $("#show-errors").text(`Your email address wasn't confirmed.`);
+        } else if (error.includes("quota-reached")) {
+          $("#show-errors").text(`Your account has reached the the number of requests allowed by your plan.`);
+        }
       });
   });
-});
+});        
+
 
 
