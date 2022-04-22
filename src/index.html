@@ -6,12 +6,11 @@
 <body>
   <div class="container">
     <h1><strong>Currency Converter</strong></h1><br>
-    <label>Please enter amount</label>
+    <label>Please enter amount $:</label>
     <input id="amount" type="number" placeholder="Enter USD"> <br>
     <br><label>Please choose the Currency you would to convert to:</label><br>
       <form id="conversion">
         <select id="select-currency" class="form-control">
-          <option value="KPW">North Korean Won - North Korea</option>
           <option value="AED">UAE Dirham - 	United Arab Emirates</option>
           <option value="ARS">Argentine Peso - Argentina</option>
           <option value="AUD">Australian Dollar - Australia</option>
@@ -54,12 +53,12 @@
           <option value="GYD">Guyanese Dollar -	Guyana</option>
           <option value="HKD">Hong Kong Dollar - Hong Kong</option>
           <option value="HNL">Honduran Lempira - Honduras</option>	
-          <option value="HRK">Croatian Kuna	Croatia</option>	
-          <option value="HTG">Haitian Gourde	Haiti</option>
-          <option value="HUF">Hungarian Forint	Hungary</option>	
-          <option value="IDR">Indonesian Rupiah	Indonesia</option>	
-          <option value="ILS">Israeli New Shekel	Israel</option>	
-          <option value="IMP">Manx Pound	Isle of Ma</option>n
+          <option value="HRK">Croatian Kuna -	Croatia</option>	
+          <option value="HTG">Haitian Gourde - Haiti</option>
+          <option value="HUF">Hungarian Forint -	Hungary</option>	
+          <option value="IDR">Indonesian Rupiah -	Indonesia</option>	
+          <option value="ILS">Israeli New Shekel -	Israel</option>	
+          <option value="IMP">Manx Pound -	Isle of Ma</option>n
           <option value="INR">Indian Rupee	India</option>
           <option value="IQD">Iraqi Dinar	Iraq</option>
           <option value="IRR">Iranian Rial	Iran</option>
@@ -114,10 +113,12 @@
         </select>
         <br><button id="convert-currency" class="btn-sucess" type="submit">Convert</button>
       </form>
+      <div id="currency-name"></div>
       <div id="new-currency"></div>
       <div id="show-errors"></div>
   </div>
 </body>
-</html>
+</html>      
+
     
 
