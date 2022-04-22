@@ -3,7 +3,10 @@ body {
   background-image: url('https://th.bing.com/th/id/OIP.Pn5IOmLh9Jrb9gWStueaKwHaEK?pid=ImgDet&rs=1');
 }
 
-.card-currency  { 
+.card-currency  {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 1rem; 
   margin-bottom: 20px;
   margin-left: auto;
   margin-right: auto;
@@ -14,7 +17,7 @@ body {
   word-wrap: break-word;
   background-color: lightgray;
   background-clip: border-box;
-  border: 1px solid rgba(0, 0, 0, 0.125);
+  border: 20px solid rgba(0, 0, 0, 0.589);
   border-radius: 0.25rem;
 }
 
@@ -34,5 +37,7 @@ body {
   border-radius: 0.25rem;
 }
 
-
+h1 {
+  text-align: center;
+}
 
