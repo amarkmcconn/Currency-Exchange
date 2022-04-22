@@ -13,7 +13,7 @@ $(document).ready(function() {
       promise.then(function(response) {
         const body = JSON.parse(response);
         $('.card-new-currency').show();
-        $('#new-currency').text("New Amount: " + (parseFloat((dollarsUs * body.conversion_rates[currencyC])).toFixed(2)));
+        $('#new-currency').text("New Amount: " + (parseFloat((dollarsUs * body.conversion_rates[currencyC])).toFixed(2)) + " " + currencyC);
         $('#currency-name').text("Your new currency is: " + currencyC);
         $('#show-errors').text("");
       }, function(error) {
