@@ -12,6 +12,7 @@ $(document).ready(function() {
     let promise = CurrencyService.getExchange();
       promise.then(function(response) {
         const body = JSON.parse(response);
+        $('.card-new-currency').show();
         $('#new-currency').text((parseFloat((dollarsUs * body.conversion_rates[currencyC])).toFixed(2)));
         $('#currency-name').text(currencyC);
         $('#show-errors').text("");
