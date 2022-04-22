@@ -1,27 +1,39 @@
-# _{Application Name}_
-#### By _**{List of contributors}**_
-#### _{Brief description of application}_
-## Technologies Used
-* _List all_
-* _the major technologies_
-* _you used in your project_
-* _here_
-## Description
-_{This is a detailed description of your application. Give as much detail as needed to explain what the application does as well as any other information you want users or other developers to have.}_
-## Setup/Installation Requirements
-* _Clone this repository to designated folder_
-* _$ npm Install_
-* _easy-to-understand_
-* _format_
-_{Leave nothing to chance! You want it to be easy for potential users, employers and collaborators to run your app. Do I need to run a server? How should I set up my databases? Is there other code this application depends on? We recommend deleting the project from your desktop, re-cloning the project from GitHub, and writing down all the steps necessary to get the project working again.}_
-## Known Bugs
+# _Currency Converter_
+#### By _**Mark McConnell**_
+#### _This is a website application that allows you convert USD to other currencies_
+## Technologies Used 🖥️
+* _HTML_
+* _JavaScript_
+* _CSS_
+* _Node_
+* _Webpack_
+* _jQuery_
+## Description 📖
+_This is a website application that allows you convert USD to other currencies. A user should be able to enter an amount (in U.S. dollars) and then specify another currency (such as the South Korean won). The user should then see the total amount they entered in converted currency. In the example above, a user might enter 10 dollars and then see that amount in South Korean won._
+## Setup/Installation Requirements 🖊️
+* _Copy the git repository url from the "code" drop down on this github page_
+* _Open a shell program & navigate to your desktop_
+* _Clone the repository using the copied URL and the "git clone" command_
+* _In the shell program, navigate to the root directory of the newly created file called "Currency Exchange"_
+* _In the root directory, create a file named ".env"_
+* _You will need to make an account on [ExchangeRate-API](https://www.exchangerate-api.com/) site._
+* _You'll be prompted to create an account with your email, first name and a password. Agree to the terms of use and click "Get Started!"_
+* _At this point, you'll be able to access a dashboard that includes your API key as well as your remaining API calls for the month._
+* _Navigate to the newly created .env file. This is where you will add your API key by typing "API_KEY={your key here}"_
+* _Add .env to your .gitignore file_
+* _Commit just your .gitignore file to your github using  $ git add .env_
+* _In the root directory run "npm install"_
+* _Once the installs have successfully completed, run "npm run build"_
+* _Then run npm run build and your web browser will open a live server to the index.html_
+## Known Bugs 🐛
 
-* _Any known issues_
-* _should go here_
+* _No Known Issues at this time_
 
 ## License
 
-_{Let people know what to do if they run into any issues or have questions, ideas or concerns.  Encourage them to contact you or make a contribution to the code.}_
+[GPLv3](https://www.gnu.org/licenses/gpl-3.0.en.html)
 
-Copyright (c) _date_ _author name(s)_
+_If you run into any issues or have questions, ideas or concerns.  Please email me mark.programming1@gmail.com or make a contribution to the code._
+
+Copyright (c) _2022_ _Mark McConnell_
 
