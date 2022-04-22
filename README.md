@@ -24,7 +24,7 @@ _This is a website application that allows you convert USD to other currencies. 
 * _Commit just your .gitignore file to your github using  $ git add .env_
 * _In the root directory run "npm install"_
 * _Once the installs have successfully completed, run "npm run build"_
-* _Then run $ "npm run build" and your web browser will open a live server to the index.html_
+* _Then run $ "npm run start" and your web browser will open a live server to the index.html_
 ## Known Bugs 🐛
 
 * _No Known Issues at this time_
