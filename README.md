@@ -33,7 +33,7 @@ _This is a website application that allows you convert USD to other currencies. 
 
 [GPLv3](https://www.gnu.org/licenses/gpl-3.0.en.html)
 
-_If you run into any issues or have questions, ideas or concerns.  Please email me mark.programming1@gmail.com or make a contribution to the code._
+_If you run into any issues or have questions, ideas or concerns;  Please email me mark.programming1@gmail.com or make a contribution to the code._
 
 Copyright (c) _2022_ _Mark McConnell_
 
